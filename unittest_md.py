@@ -19,8 +19,7 @@ atoms.calc = EMT()
 class MdTests(unittest.TestCase):
     def test_calcenergy(self):
         a,b,c = calcenergy(atoms)
-        if(a+b ==c):
-            self.assertTrue(True)
+        self.assertTrue(a+b==c)
 
 if __name__ == "__main__":
     tests = [unittest.TestLoader().loadTestsFromTestCase(MdTests)]
