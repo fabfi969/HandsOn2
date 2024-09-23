@@ -10,7 +10,7 @@ def calcenergy(a):  # store a reference to atoms in the definition.
         """Function to calculate the potential, kinetic and total energy."""
         epot = a.get_potential_energy() / len(a)
         ekin = a.get_kinetic_energy() / len(a)
-        etot = epot + ekin
+        etot = epot + ekin + 1000
         return(epot, ekin, etot)
 
 def run_md():
